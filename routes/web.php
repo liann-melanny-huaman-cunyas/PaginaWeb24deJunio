@@ -6,7 +6,7 @@ use App\Http\Controllers\GradeController;
 
 
 Route::get('/', function () {
-    return view('pruebas');
+    return view('inicio');
 })->name('inicio');
 
 Route::get('/conocenos', function () {
