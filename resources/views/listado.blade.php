@@ -27,28 +27,30 @@
                             <th scope="col" class="px-6 py-3">CURSO</th>
                             <th scope="col" class="px-6 py-3">GRADO</th>
                             <th scope="col" class="px-6 py-3">SECCION</th>
+                            <th scope="col" class="px-6 py-3">BIMESTRE</th>
                             <th scope="col" class="px-6 py-3">ARCHIVO DE NOTAS</th>
+                            <th scope="col" class="px-6 py-3">ACCION</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class="border-b bg-white dark:border-gray-700 dark:bg-gray-800">
-                            <th scope="row" class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">Apple MacBook Pro 17"</th>
-                            <td class="px-6 py-4">Silver</td>
-                            <td class="px-6 py-4">Laptop</td>
-                            <td class="px-6 py-4">$2999</td>
-                          </tr>
-                          <tr class="border-b bg-white dark:border-gray-700 dark:bg-gray-800">
-                            <th scope="row" class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">Microsoft Surface Pro</th>
-                            <td class="px-6 py-4">White</td>
-                            <td class="px-6 py-4">Laptop PC</td>
-                            <td class="px-6 py-4">$1999</td>
-                          </tr>
-                          <tr class="bg-white dark:bg-gray-800">
-                            <th scope="row" class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">Magic Mouse 2</th>
-                            <td class="px-6 py-4">Black</td>
-                            <td class="px-6 py-4">Accessories</td>
-                            <td class="px-6 py-4">$99</td>
-                          </tr>
+                            @foreach($notas as $nota)
+                                <tr class="border-b bg-white dark:border-gray-700 dark:bg-gray-800">
+                                    <td scope="row" class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $nota->curso }}</td>
+                                    <td class="px-6 py-4">{{ $nota->grado }}</td>
+                                    <td class="px-6 py-4">{{ $nota->seccion }}</td>
+                                    <td class="px-6 py-4">{{ $nota->bimestre }}</td>
+                                    <td class="px-6 py-4">
+                                        <a href="{{ route('notas.show', $nota->id) }}" target="_blank">Ver PDF</a>
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <a href="{{ route('notas.destroy', $nota->id) }}" onclick="event.preventDefault(); document.getElementById('delete-form-{{ $nota->id }}').submit();">Borrar</a>
+                                        <form id="delete-form-{{ $nota->id }}" action="{{ route('notas.destroy', $nota->id) }}" method="POST" style="display: none;">
+                                            @csrf
+                                            @method('DELETE')
+                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                       </table>
                     </div>

@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Grade extends Model
 {
-    protected $fillable=[
-        'curso',
-        'grado',
-        'seccion',
-        'archivo',
-    ];
+    protected $fillable = ['grado', 'seccion', 'curso', 'ruta_pdf'];
 
+    public function getRutaPdfAttribute($value)
+    {
+        // Puedes modificar esta función si necesitas manipular la ruta del PDF antes de mostrarla
+        return asset('pdfs/' . $value);
+    }
 }

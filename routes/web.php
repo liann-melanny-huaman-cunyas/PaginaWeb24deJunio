@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GradeController;
+use App\Http\Controllers\NotaController;
 
 
 Route::get('/', function () {
@@ -39,6 +40,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::post('/Enviodatos', [GradeController::class, 'Insertar'])->name('Enviodatos');
+Route::get('/notas', [NotaController::class, 'index'])->name('notas.index');
+Route::get('/notas/create', [NotaController::class, 'create'])->name('notas.create');
+Route::post('/notas', [NotaController::class, 'store'])->name('notas.store');
+Route::delete('/notas/{id}', [NotaController::class, 'destroy'])->name('notas.destroy');
+Route::get('/notas/{id}', [NotaController::class, 'show'])->name('notas.show');
 
 require __DIR__.'/auth.php';
