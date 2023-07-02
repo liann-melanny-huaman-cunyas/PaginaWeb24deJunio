@@ -1,19 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
       <div class="flex flex-wrap">
-          @if (Auth::user()->role === 'docente')
             <div class="w-1/6 p-2">
               <a href="{{ route('dashboard') }}" class="font-semibold text-xl text-gray-800 leading-tight">
                       Registro de Notas
               </a>
             </div>
-          @elseif (Auth::user()->role === 'docente' && Auth::user()->role === 'apoderado')
             <div class="w-1/6 p-2">
               <a href="{{ route('listado') }}" class="font-semibold text-xl text-gray-800 leading-tight">
                       Listado de Notas
               </a>
             </div>
-          @endif
         </div>
     </x-slot>
 
