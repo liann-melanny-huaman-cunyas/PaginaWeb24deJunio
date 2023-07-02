@@ -4,13 +4,6 @@ FROM node:14.17-alpine
 # Set the working directory
 WORKDIR /app
 
-# Install PHP dependencies
-COPY composer.json composer.lock ./
-RUN composer install --ignore-platform-reqs --no-scripts --no-autoloader
-
-# Copy the rest of the application code
-COPY . ./
-
 # Install Node.js dependencies and build the assets
 RUN npm install && npm run prod
 
