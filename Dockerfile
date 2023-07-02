@@ -15,7 +15,6 @@ COPY . ./
 RUN npm install && npm run prod
 
 # Configure the server to serve the Laravel application
-COPY ./.env.production .env
 RUN php artisan config:cache && php artisan route:cache && php artisan view:cache
 
 # Expose the port
