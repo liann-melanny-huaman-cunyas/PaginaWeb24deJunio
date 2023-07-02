@@ -28,7 +28,7 @@ Route::get('/contactenos', function () {
 
 Route::get('/listado', function () {
     return view('listado');
-})->name('listado');
+})->middleware(['auth', 'verified'])->name('listado');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
