@@ -26,7 +26,7 @@ class NotaController extends Controller
                 'seccion' => 'required',
                 'curso' => 'required',
                 'bimestre'=> 'required',
-                'pdf' => 'required|file|mimes:pdf|max:2048',
+                'pdf' => 'required|file|mimes:pdf',
             ]);
 
             // Crea una nueva instancia de la nota y guarda los datos en la base de datos
@@ -43,37 +43,15 @@ class NotaController extends Controller
                 $nota->ruta_pdf = $pdfPath;
             }
 
-
-
             $nota->save();
-
-            // Redirige al listado de notas después de guardar
-        return redirect()->route('listado');
+            return redirect()->route('listado');
 
     }
-
-    public function show($id)
-        {
-            $nota = Nota::find($id);
-
-            if (!$nota) {
-                abort(404, 'La nota no existe.');
-            }
-
-            $pdfPath = public_path('pdfs/' . $nota->ruta_pdf);
-            if (!file_exists($pdfPath)) {
-                abort(404, 'El archivo PDF no se encuentra.');
-            }
-
-            // Redireccionar al PDF
-            return response()->file($pdfPath);
-        }
-
 
     public function destroy($id)
     {
         $nota = Nota::findOrFail($id);
         $nota->delete();
-        return redirect()->route('notas.index');
+        return redirect()->route('listado');
     }
 }

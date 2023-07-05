@@ -93,10 +93,10 @@
           @foreach ($comunicados as $comunicado)
           <div class="-mt-12 p-2 sm:mt-0 md:w-1/2 lg:-mr-20 xl:w-1/3">
             <div class="-mb-12 rounded-lg p-12">
-              <img class="mb-6 h-40 w-full rounded object-cover object-center" src="{{ str_replace(' ', '%20', asset($comunicado->foto)) }}" alt="{{ $comunicado->titulo }}" />
+              <img class="mb-6 h-40 rounded object-cover object-center" src="{{ str_replace(' ', '%20', asset($comunicado->foto)) }}" alt="{{ $comunicado->titulo }}" />
               <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el {{ $comunicado->fecha }}</h3>
               <h2 class="title-font my-4 text-lg font-medium text-gray-900">{{ $comunicado->titulo }}</h2>
-              <p class="text-base leading-relaxed">{{ $comunicado->contenido }}</p>
+              <p class="text-base ">{{ $comunicado->contenido }}</p>
               <div>
                 <a class="mt-4 inline-flex items-center text-black">Leer más
                   <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">

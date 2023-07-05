@@ -35,7 +35,7 @@
                                     <td class="px-6 py-4">{{ $nota->seccion }}</td>
                                     <td class="px-6 py-4">{{ $nota->bimestre }}</td>
                                     <td class="px-6 py-4">
-                                        <a href="{{ route('notas.show', $nota->id) }}" target="_blank">Ver PDF</a>
+                                        <a href="{{ asset($nota->ruta_pdf) }}" target="_blank">Ver PDF</a>
                                     </td>
                                     <td class="px-6 py-4">
                                         <a href="{{ route('notas.destroy', $nota->id) }}" onclick="event.preventDefault(); document.getElementById('delete-form-{{ $nota->id }}').submit();">Borrar</a>
@@ -50,7 +50,6 @@
                       </table>
                     </div>
                   </section>
-                  
                 </div>
             </div>
         </div>

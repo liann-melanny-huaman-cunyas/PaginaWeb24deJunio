@@ -26,7 +26,7 @@
                             <div class="relative">
                               <label for="name" class="text-sm leading-7 text-gray-600">Curso</label>
                               <div>
-                                <select name='curso'id="countries" class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200">
+                                <select name='curso' class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200">
                                   <option selected>Seleccionar curso</option>
                                   <option value="Matematica">Matematica</option>
                                   <option value="Comunicacion">Comunicacion</option>
@@ -83,7 +83,7 @@
                           <div class="w-full p-2">
                             <div class="relative">
                               <label for="message" class="text-sm leading-7 text-gray-600">Archivo de notas</label>
-                              <input type="file" name="pdf" class=" w-full resize-none   px-3 py-1 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"></textarea>
+                              <input type="file" name="pdf" class=" w-full resize-none   px-3 py-1 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200">
                             </div>
                           </div>
                           <div class="w-full p-2">
