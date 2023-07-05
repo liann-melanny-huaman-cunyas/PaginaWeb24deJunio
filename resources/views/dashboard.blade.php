@@ -1,107 +1,61 @@
 <x-app-layout>
-    <x-slot name="header">
-      <div class="flex flex-wrap">
-            <div class="w-1/6 p-2">
-              <a href="{{ route('dashboard') }}" class="font-semibold text-xl text-gray-800 leading-tight">
-                      Registro de Notas
-              </a>
-            </div>
-            <div class="w-1/6 p-2">
-              <a href="{{ route('listado') }}" class="font-semibold text-xl text-gray-800 leading-tight">
-                      Listado de Notas
-              </a>
-            </div>
-        </div>
-    </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-              <div class="p-6 text-gray-900">
-                <section class="body-font relative text-gray-600">
-                    <div class="container mx-auto px-5 py-24">
-                      <div class="mb-12 flex w-full flex-col text-center">
-                        <h1 class="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl">NOTAS</h1>
-                      </div>
-                      <div class="mx-auto md:w-2/3 lg:w-1/2">
-                        <form action="{{ route('notas.store') }}" method="POST" enctype="multipart/form-data">
-                          @csrf
-                          <div class="-m-2 flex flex-wrap">
-                          <div class="w-1/2 p-2">
-                            <div class="relative">
-                              <label for="name" class="text-sm leading-7 text-gray-600">Curso</label>
-                              <div>
-                                <select name='curso'id="countries" class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200">
-                                  <option selected>Seleccionar curso</option>
-                                  <option value="Matematica">Matematica</option>
-                                  <option value="Comunicacion">Comunicacion</option>
-                                  <option value="Ingles">Ingles</option>
-                                  <option value="pfrh">PFRH</option>
-                                  <option value="cta">CTA</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="w-1/2 p-2">
-                            <div class="relative">
-                              <label for="name" class="text-sm leading-7 text-gray-600">Grado</label>
-                              <div>
-                                <select name='grado' class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200">
-                                  <option selected>Seleccionar grado</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="w-1/2 p-2">
-                            <div class="relative">
-                              <label for="email"  class="text-sm leading-7 text-gray-600">Seccion</label>
-                              <div class="flex justify-end mt-1">
-                                <select name='seccion' class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200">
-                                  <option selected>Seleccionar seccion</option>
-                                  <option value="UNICO">Unico</option>
-                                  <option value="A">A</option>
-                                  <option value="B">B</option>
-                                  <option value="C">C</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="w-1/2 p-2">
-                            <div class="relative">
-                              <label for="email"  class="text-sm leading-7 text-gray-600">Bimestre</label>
-                              <div class="flex justify-end mt-1">
-                                <select name='bimestre' class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200">
-                                  <option selected>Seleccionar bimestre</option>
-                                  <option value="primer">Primer</option>
-                                  <option value="segundo">Segundo</option>
-                                  <option value="tercer">Tercer</option>
-                                  <option value="cuarto">Cuarto</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="w-full p-2">
-                            <div class="relative">
-                              <label for="message" class="text-sm leading-7 text-gray-600">Archivo de notas</label>
-                              <input type="file" name="pdf" class=" w-full resize-none   px-3 py-1 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"></textarea>
-                            </div>
-                          </div>
-                          <div class="w-full p-2">
-                            <button class="mx-auto flex rounded border-0 bg-black px-8 py-2 text-lg text-white hover:border-2 hover:bg-white hover:text-black focus:outline-none">Cargar notas</button>
-                          </div>
-                          <div class="mt-8 w-full border-t border-gray-200 p-2 pt-8 text-center"></div>
-                        </div>
-                    </form>
-                      </div>
-                    </div>
-                </section>
-            </div>
-            </div>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">PROCESOS</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">COLEGIO 24 DE JUNIO</p>
         </div>
+        <div class="flex flex-wrap -m-4 text-center">
+               <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <a  href="{{ route('listado') }}">
+                      <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                          <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                          <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                        </svg>
+                        <h2 class="title-font font-medium text-2xl text-gray-900">VISUALIZAR <br> NOTAS</h2>
+                  </a>
+                </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <a href="{{ route('comunicados.create') }}">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+              </svg>
+              <h2 class="title-font font-medium text-2xl text-gray-900">SUBIR <br> COMUNICADOS</h2>
+            </div>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <a href="{{ route('noticias.create') }}">
+              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                </svg>
+                <h2 class="title-font font-medium text-2xl text-gray-900">SUBIR <BR> NOTICIAS</h2>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <a href="{{ route('notas.create') }}"">
+              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                </svg>
+                <h2 class="title-font font-medium text-2xl text-gray-900">SUBIR <BR> NOTAS</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
 </x-app-layout>

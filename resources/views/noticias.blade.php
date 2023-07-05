@@ -65,133 +65,50 @@
     </header>
 
     <section>
-        <div class="container mx-auto px-5">
+      <div class="container mx-auto px-5">
           <div class="py-10 text-center">
-            <h1 class="title-font text-3xl font-medium text-gray-900 sm:text-6xl">NOTICIAS</h1>
+              <h1 class="title-font text-3xl font-medium text-gray-900 sm:text-6xl">NOTICIAS</h1>
           </div>
-        </div>
-        <div class="mr-auto mt-10 flex justify-end lg:mr-32">
+      </div>
+      <div class="mr-auto mt-10 flex justify-end lg:mr-32">
           <div class="mb-4 flex">
-            <a class="0 flex-grow border-b-2 border-black px-5 py-2 text-lg text-black">Todos</a>
-            <a class="flex-grow border-b-2 border-gray-300 px-5 py-2 text-lg">2023</a>
-            <a class="flex-grow border-b-2 border-gray-300 px-5 py-2 text-lg">2024</a>
-            <a class="flex-grow border-b-2 border-gray-300 px-5 py-2 text-lg">2025</a>
+              <a class="0 flex-grow border-b-2 border-black px-5 py-2 text-lg text-black">Todos</a>
+              <a class="flex-grow border-b-2 border-gray-300 px-5 py-2 text-lg">2023</a>
+              <a class="flex-grow border-b-2 border-gray-300 px-5 py-2 text-lg">2024</a>
+              <a class="flex-grow border-b-2 border-gray-300 px-5 py-2 text-lg">2025</a>
           </div>
-        </div>
-        <div class="my-12 flex justify-start px-6 lg:my-10 lg:ml-28">
+      </div>
+      <div class="my-12 flex justify-start px-6 lg:my-10 lg:ml-28">
           <div class="mb-6 w-full">
-            <h1 class="title-font mb-2 text-2xl font-medium lg:text-4xl">
-              <span class="text-black">Noticias</span>
-              <span class="ml-5 text-white lg:ml-2">2023</span>
-            </h1>
-            <div class="-mt-12 ml-40 h-10 w-20 rounded bg-black lg:ml-36 lg:w-24"></div>
+              <h1 class="title-font mb-2 text-2xl font-medium lg:text-4xl">
+                  <span class="text-black">Noticias</span>
+                  <span class="ml-5 text-white lg:ml-2">2023</span>
+              </h1>
+              <div class="-mt-12 ml-40 h-10 w-20 rounded bg-black lg:ml-36 lg:w-24"></div>
           </div>
-        </div>
-        <div class="-m-4 flex flex-wrap justify-center">
-          <div class="-mt-12 p-2 sm:mt-0 md:w-1/2 lg:-mr-20 xl:w-1/3">
-            <div class="-mb-12 rounded-lg p-12">
-              <img class="mb-6 h-40 w-full rounded object-cover object-center" src="https://dummyimage.com/720x400" alt="content" />
-              <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el 29 de Junio , 2023 Huancayo</h3>
-              <h2 class="title-font my-4 text-lg font-medium text-gray-900">Chichen Itza</h2>
-              <p class="text-base leading-relaxed">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              <div>
-                <a class="mt-4 inline-flex items-center text-black"
-                  >Learn More
-                  <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="p-2 md:w-1/2 xl:w-1/3">
-            <div class="rounded-lg p-12">
-              <img class="mb-6 h-40 w-full rounded object-cover object-center" src="https://dummyimage.com/720x400" alt="content" />
-              <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el 29 de Junio , 2023 Huancayo</h3>
-              <h2 class="title-font my-4 text-lg font-medium text-gray-900">Chichen Itza</h2>
-              <p class="text-base leading-relaxed">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              <div>
-                <a class="mt-4 inline-flex items-center text-black"
-                  >Learn More
-                  <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="p-2 md:w-1/2 lg:-ml-20 xl:w-1/3">
-            <div class="rounded-lg p-12">
-              <img class="mb-6 h-40 w-full rounded object-cover object-center" src="https://dummyimage.com/720x400" alt="content" />
-              <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el 29 de Junio , 2023 Huancayo</h3>
-              <h2 class="title-font my-4 text-lg font-medium text-gray-900">Chichen Itza</h2>
-              <p class="text-base leading-relaxed">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                <div>
-                <a class="mt-4 inline-flex items-center text-black"
-                  >Learn More
-                  <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="p-2 md:w-1/2 lg:-mr-20 xl:w-1/3">
-            <div class="rounded-lg p-12">
-              <img class="mb-6 h-40 w-full rounded object-cover object-center" src="https://dummyimage.com/720x400" alt="content" />
-              <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el 29 de Junio , 2023 Huancayo</h3>
-              <h2 class="title-font my-4 text-lg font-medium text-gray-900">Chichen Itza</h2>
-              <p class="text-base leading-relaxed">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                      <div>
-                <a class="mt-4 inline-flex items-center text-black"
-                  >Learn More
-                  <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="p-2 md:w-1/2 xl:w-1/3">
-            <div class="rounded-lg p-12">
-              <img class="mb-6 h-40 w-full rounded object-cover object-center" src="https://dummyimage.com/720x400" alt="content" />
-              <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el 29 de Junio , 2023 Huancayo</h3>
-              <h2 class="title-font my-4 text-lg font-medium text-gray-900">Chichen Itza</h2>
-              <p class="text-base leading-relaxed">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                      <div>
-                <a class="mt-4 inline-flex items-center text-black"
-                  >Learn More
-                  <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="p-2 md:w-1/2 lg:-ml-20 xl:w-1/3">
-            <div class="rounded-lg p-12">
-              <img class="mb-6 h-40 w-full rounded object-cover object-center" src="https://dummyimage.com/720x400" alt="content" />
-              <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el 29 de Junio , 2023 Huancayo</h3>
-              <h2 class="title-font my-4 text-lg font-medium text-gray-900">Chichen Itza</h2>
-              <p class="text-base leading-relaxed">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                      <div>
-                <a class="mt-4 inline-flex items-center text-black"
-                  >Learn More
-                  <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+      </div>
+      <div class="-m-4 flex flex-wrap justify-center">
+        @foreach ($noticias as $noticia)
+        <div class="-mt-12 p-2 sm:mt-0 md:w-1/2 lg:-mr-20 xl:w-1/3">
+          <div class="-mb-12 rounded-lg p-12">
+            <img class="mb-6 h-40 w-full rounded object-cover object-center" src="{{ str_replace(' ', '%20', asset($noticia->foto)) }}" alt="{{ $noticia->titulo }}" />
+            <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el {{ $noticia->fecha }}</h3>
+            <h2 class="title-font my-4 text-lg font-medium text-gray-900">{{ $noticia->titulo }}</h2>
+            <p class="text-base leading-relaxed">{{ $noticia->contenido }}</p>
+            <div>
+              <a class="mt-4 inline-flex items-center text-black">Leer más
+                <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      @endforeach
+      
+      </div>
+  </section>
 
     <footer class="bg-white" aria-labelledby="footer-heading">
         <div>

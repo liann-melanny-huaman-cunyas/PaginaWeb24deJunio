@@ -1,18 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
         <div class="flex flex-wrap">
-            <div class="w-1/6 p-2">
-                <a href="{{ route('dashboard') }}" class="font-semibold text-xl bgtext-gray-800 leading-tight">
-                        Registro de Notas
+              <div class="w-1/6 p-2">
+                <a href="{{ route('dashboard') }}" class="font-semibold text-xl text-gray-800 leading-tight">
+                        Procesos
                 </a>
-            </div>
-            <div class="w-1/6 p-2">
-                <a href="{{ route('listado') }}" class="font-semibold text-xl bgtext-gray-800 leading-tight">
-                        Listado de Notas
-                </a>
-            </div>
-        </div>
-    </x-slot>
+              </div>
+          </div>
+      </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">

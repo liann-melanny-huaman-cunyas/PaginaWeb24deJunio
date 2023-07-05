@@ -15,7 +15,7 @@ class NotaController extends Controller
 
     public function create()
     {
-        return view('dashboard');
+        return view('subirnotas');
     }
 
     public function store(Request $request)
@@ -48,7 +48,7 @@ class NotaController extends Controller
             $nota->save();
 
             // Redirige al listado de notas después de guardar
-        return redirect()->route('notas.index');
+        return redirect()->route('listado');
 
     }
 
