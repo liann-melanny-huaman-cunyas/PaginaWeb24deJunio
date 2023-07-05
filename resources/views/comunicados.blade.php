@@ -9,61 +9,62 @@
 <body>
     <header class="bg-white">
         <nav class="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="{{ route('inicio') }}" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="{{ asset('imagenes/LOGO.png') }}" alt="24deJunio" />
-                </a>
-            </div>
-            <div class="hidden pb-6 lg:flex lg:gap-x-12">
-                <a href="{{ route('inicio') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Inicio</a>
-                <a href="{{ route('conocenos') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Conócenos</a>
-                <a href="{{ route('comunicados') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Comunicados</a>
-                <a href="{{ route('noticias') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Noticias</a>
-                <a href="{{ route('contactenos') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Contactenos</a>
-            </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="{{ route('inicio') }}" class="text-sm font-semibold leading-6 text-gray-900">24Intranet <span aria-hidden="true">&rarr;</span></a>
-            </div>
-        </nav>
-        <div class=" bg-black px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-            <div class="flex">
-                <p class="text-sm leading-6 text-white">
-                <strong class="font-semibold">ULTIMOS COMUNICADOS</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Se cobrara s/15 soles por los sombreros.
-                </p>
-            </div>
-        </div>
-        <div class="lg:hidden" role="dialog" aria-modal="true">
-            <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                <div class="flex items-center justify-between">
-                    <a href="{{ route('inicio') }}" class="-m-1.5 p-1.5">
-                        <span class="sr-only">Your Company</span>
-                    </a>
-                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                        <span class="sr-only">Close menu</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="mt-6 flow-root">
-                    <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6">
-                        <a href="{{ route('inicio') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Inicio</a>
-                        <a href="{{ route('conocenos') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Conócenos</a>
-                        <a href="{{ route('comunicados') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Comunicados</a>
-                        <a href="{{ route('noticias') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Noticias</a>
-                        <a href="{{ route('contactenos') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contactenos</a>
-                        </div>
-                        <div class="py-6">
-                        <a href="{{ route('inicio') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">24Intranet</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
+          <div class="flex lg:flex-1">
+              <a href="{{ route('inicio') }}" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+                  <img class="h-8 w-auto" src="{{ asset('imagenes/LOGO.png') }}" alt="" />
+              </a>
+          </div>
+          <div class="hidden pb-6 lg:flex lg:gap-x-12" id="desktopNav">
+              <a href="{{ route('inicio') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Inicio</a>
+              <a href="{{ route('conocenos') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Conócenos</a>
+              <a href="{{ route('comunicados') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Comunicados</a>
+              <a href="{{ route('noticias') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Noticias</a>
+              <a href="{{ route('contactenos') }}" class="text-sm font-semibold leading-6 pt-28 text-gray-900">Contactenos</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+              <a href="{{ route('dashboard') }}" class="text-sm font-semibold leading-6 text-gray-900">24Intranet <span aria-hidden="true">&rarr;</span></a>
+          </div>
+      </nav>
+      <div class="bg-black px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+          <div class="flex">
+              <p class="text-sm leading-6 text-white">
+                  <strong class="font-semibold">ULTIMOS COMUNICADOS</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Se cobrara s/15 soles por sombrero.
+              </p>
+          </div>
+      </div>
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" id="mobileNav">
+              <div class="flex items-center justify-between">
+                  <a href="{{ route('inicio') }}" class="-m-1.5 p-1.5">
+                      <span class="sr-only">Your Company</span>
+                      <img class="h-8 w-auto" src="" alt="" />
+                  </a>
+                  <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="toggleNavButton">
+                      <span class="sr-only">Toggle menu</span>
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                  </button>
+              </div>
+              <div class="mt-6 flow-root" id="mobileNavMenu">
+                  <div class="-my-6 divide-y divide-gray-500/10">
+                      <div class="space-y-2 py-6">
+                          <a href="{{ route('inicio') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Inicio</a>
+                          <a href="{{ route('conocenos') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Conócenos</a>
+                          <a href="{{ route('comunicados') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Comunicados</a>
+                          <a href="{{ route('noticias') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Noticias</a>
+                          <a href="{{ route('contactenos') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contactenos</a>
+                      </div>
+                      <div class="py-6">
+                          <a href="{{ route('dashboard') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">24Intranet</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </header>
     <section>
       <section>
         <div class="container mx-auto px-5">

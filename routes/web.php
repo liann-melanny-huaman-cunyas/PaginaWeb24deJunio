@@ -15,10 +15,6 @@ use App\Http\Controllers\ComunicadoController;
         return view('conocenos');
     })->name('conocenos');
 
-    Route::get('/comunicados', function () {
-        return view('comunicados');
-    })->name('comunicados');
-
     Route::get('/contactenos', function () {
         return view('contactenos');
     })->name('contactenos');
