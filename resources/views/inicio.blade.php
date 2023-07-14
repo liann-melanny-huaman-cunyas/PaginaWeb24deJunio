@@ -73,15 +73,57 @@
         </div>
     </div>
 
+    <section class="flex items-center overflow-hidden">
+        <div class="m-20"">
+            <div class="flex justify-around">
+                <div class="mx-20 flex items-center">
+                    <img alt="" class="max-w-2xl " src="{{ asset('imagenes/fondo.jpg') }}">
+                </div>
+                <div class="border border-zinc-400 font-sans p-12 ">
+                    <div class="">
+                        <div class="flex flex-wrap mb-6">
+                            <div class="">
+                                <h1 class="sm:text-3xl text-2xl font-medium title-font text-rose-900">24 de Junio</h1>
+                                <span>
+                                    <p class="text-zinc-700">
+                                    COLEGIO
+                                    </p>
+                                </span>
+                                <div class="h-0.5 w-96 bg-zinc-400 rounded md:w-72"></div>
+                            </div>
+                        </div>
+                        <div class="max-h-96 text-zinc-400 overflow-y-scroll">
+                            <p class="font-sans text-base leading-relaxed text-justify">
+                                Estimada comunidad educativa,<br><br>
+                                Deseo darles una cálida bienvenida al inicio de un nuevo año escolar en el Colegio 24 de Junio. Este año es especialmente significativo, ya que nos encontramos frente a una nueva gestión y estamos experimentando cambios positivos en el panorama educativo de nuestro amado Perú.
+                                <br><br>
+                                Hemos atravesado momentos difíciles: la pandemia, la alternancia entre clases presenciales y virtuales, los contagios, la enfermedad y la pérdida de seres queridos. Sin duda, el campo educativo ha sido uno de los más afectados en nuestro país.
+                                <br><br>
+                                Reconocemos que todos somos partícipes de los procesos educativos, tanto en nuestras familias como en nuestra comunidad local y en todo el país. En el Colegio 24 de Junio, nos esforzaremos para seguir siendo un referente de educación de calidad, permitiéndonos crecer juntos día a día.
+                                <br><br>
+                                En nombre de toda la comunidad educativa, quiero expresar nuestro sincero agradecimiento por la confianza que han depositado en el Colegio 24 de Junio.
+                                <br><br>
+                                Reciban un cordial saludo,
+                                <br><br>
+                                NOMBRE DEL DIRECTOR.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="text-black body-font py-12">
         <div class="container px-5 py-10 mx-auto">
             <div class="flex flex-wrap w-full mb-4">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
                     <h1 class="text-3xl font-medium title-font mb-2 lg:ml-8">
-                        <span class="text-black">Últimos</span>
-                        <span class="text-white">Noticias</span>
+                        <span class="text-zinc-700">Últimas</span>
+                        <span class="text-zinc-100 ml-1.5">Noticias</span>
                     </h1>
-                    <div class="h-10 w-32 ml-28 -mt-12 bg-black rounded lg:ml-36"></div>
+                    <div class="h-10 w-32 ml-28 -mt-12 bg-rose-900 rounded lg:ml-36"></div>
                 </div>
             </div>
             <div class="container px-12 py-6 mx-auto">
@@ -174,63 +216,18 @@
                 </div>
             </div>
     </section>
-    <section class="text-gray-600 body-font">
+    <section class="comunicados text-gray-600 body-font">
         <div class="container px-5 py-10 mx-auto">
             <div class="flex flex-wrap w-full mb-4">
                 <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
                     <h1 class="text-3xl font-medium title-font mb-2 lg:ml-7">
                         <span class="text-black">Últimos</span>
-                        <span class="text-white">Comunicados</span>
+                        <span class="text-white ml-1">Comunicados</span>
                     </h1>
-                    <div class="h-10 w-48 ml-28 -mt-12 bg-black rounded lg:ml-36 "></div>
+                    <div class="h-10 w-48 ml-28 -mt-12 bg-rose-900 rounded lg:ml-36 "></div>
                 </div>
             </div>
-            <div class="flex flex-wrap -m-4">
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="{{ asset('imagenes/portada3.jpeg') }}" alt="content">
-                        <h3 class="tracking-widest text-black text-xs font-medium title-font">Publicado el 29 de Junio
-                            , 2023 Huancayo </h3>
-                        <h2 class="text-lg text-gray-900 font-medium title-font my-4">Chichen Itza</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.</p>
-                    </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="https://dummyimage.com/720x400" alt="content">
-                        <h3 class="tracking-widest text-black text-xs font-medium title-font">Publicado el 29 de Junio
-                            , 2023 Huancayo </h3>
-                        <h2 class="text-lg text-gray-900 font-medium title-font my-4">Chichen Itza</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.</p>
-                    </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="https://dummyimage.com/720x400" alt="content">
-                        <h3 class="tracking-widest text-black text-xs font-medium title-font">Publicado el 29 de Junio
-                            , 2023 Huancayo </h3>
-                        <h2 class="text-lg text-gray-900 font-medium title-font my-4">Chichen Itza</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.</p>
-                    </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="p-6 rounded-lg">
-                        <img class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="https://dummyimage.com/720x400" alt="content">
-                        <h3 class="tracking-widest text-black text-xs font-medium title-font">Publicado el 29 de Junio
-                            , 2023 Huancayo </h3>
-                        <h2 class="text-lg text-gray-900 font-medium title-font my-4">Chichen Itza</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 

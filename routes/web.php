@@ -40,13 +40,13 @@ use App\Http\Controllers\ComunicadoController;
     Route::get('/noticias/create', [NoticiaController::class, 'create'])->name('noticias.create');
     Route::post('/noticias', [NoticiaController::class, 'store'])->name('noticias.store');
     Route::delete('/noticias/{id}', [NoticiaController::class, 'destroy'])->name('noticias.destroy');
-    Route::get('/noticias/{noticia}', [NoticiaController::class, 'show'])->name('noticias.show');
+    Route::get('/noticias/listado', [NoticiaController::class, 'listado'])->name('noticias.listado');
 
     Route::get('/comunicados', [ComunicadoController::class, 'index'])->name('comunicados');
     Route::get('/comunicados/create', [ComunicadoController::class, 'create'])->name('comunicados.create');
     Route::post('/comunicados', [ComunicadoController::class, 'store'])->name('comunicados.store');
     Route::delete('/comunicados/{id}', [ComunicadoController::class, 'destroy'])->name('comunicados.destroy');
-    Route::get('/comunicados/{comunicado}', [ComunicadoController::class, 'show'])->name('comunicados.show');
+    Route::get('/comunicados/listado', [ComunicadoController::class, 'listado'])->name('comunicados.listado');
 
 
 require __DIR__.'/auth.php';

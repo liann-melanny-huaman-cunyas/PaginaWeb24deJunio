@@ -88,26 +88,31 @@
               <div class="-mt-12 ml-40 h-10 w-20 rounded bg-black lg:ml-36 lg:w-24"></div>
           </div>
       </div>
-      <div class="-m-4 flex flex-wrap justify-center">
+      <div class="flex flex-wrap justify-center">
         @foreach ($noticias as $noticia)
-        <div class="-mt-12 p-2 sm:mt-0 md:w-1/2 lg:-mr-20 xl:w-1/3">
-          <div class="-mb-12 rounded-lg p-12">
-            <img class="mb-6 h-40 w-full rounded object-cover object-center" src="{{ str_replace(' ', '%20', asset($noticia->foto)) }}" alt="{{ $noticia->titulo }}" />
-            <h3 class="title-font text-xs font-medium tracking-widest text-black">Publicado el {{ $noticia->fecha }}</h3>
-            <h2 class="title-font my-4 text-lg font-medium text-gray-900">{{ $noticia->titulo }}</h2>
-            <p class="text-base leading-relaxed">{{ $noticia->contenido }}</p>
-            <div>
-              <a class="mt-4 inline-flex items-center text-black">Leer más
-                <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
+        <div class="p-2 sm:mt-0 md:w-1/2 lg:-mr-20 xl:w-1/3">
+            <div class="p-12">
+                <div class="border-2 border-rose-700 rounded-3xl">
+                            <div class="ml-12">
+                                <div class=" w-11/12 h-64 p-4">
+                                    <img class="w-full h-full object-cover" src="{{ str_replace(' ', '%20', asset($noticia->foto)) }}" alt="{{ $noticia->titulo }}" />
+                                </div>
+                                <h3 class="title-font text-xs font-bold  mt-5 text-black">Publicado el {{ $noticia->fecha }}</h3>
+                                <h2 class="title-font my-4 text-xl font-medium text-black">{{ $noticia->titulo }}</h2>
+                                <p class="text-base px-6 ">{{ $noticia->contenido }}</p>
+                                <div class="pb-4">
+                                    <a class="mt-4 inline-flex items-center text-black">Leer más
+                                            <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
             </div>
-          </div>
         </div>
       @endforeach
-      
       </div>
   </section>
 

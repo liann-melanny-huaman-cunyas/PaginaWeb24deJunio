@@ -9,12 +9,12 @@ class ComunicadoController extends Controller
     public function index()
     {
         $comunicados = Comunicado::latest()->get();
-        return view('comunicados', compact('comunicados'));
+        return view('inicio', compact('comunicados'));
     }
 
     public function create()
     {
-        return view('crearcomunicados');
+        return view('inicio');
     }
 
     public function store(Request $request)
@@ -33,27 +33,27 @@ class ComunicadoController extends Controller
 
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
-            $imgPath = 'imgs/' . $file->getClientOriginalName();
+            $imgPath = 'img/' . $file->getClientOriginalName();
             $file->move(public_path('img'), $imgPath);
             $comunicado->foto = $imgPath;
         }
-
+ 
         $comunicado->save();
 
-        return redirect()->route('comunicados');
+        return redirect()->route('inicio');
     }
 
     public function show($id)
     {
         $comunicado = Comunicado::findOrFail($id);
-        return view('comunicado.show', compact('noticia'));
+        return view('inicio', compact('noticia'));
     }
 
     public function destroy($id)
     {
         $comunicado = Comunicado::findOrFail($id);
         $comunicado->delete();
-        return redirect()->route('comunicado.index');
+        return redirect()->route('inicio');
     }
 }
 
