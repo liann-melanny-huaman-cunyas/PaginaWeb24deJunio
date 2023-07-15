@@ -65,7 +65,7 @@
       </div>
       
       </header>
-    <section>
+    <section class="bg-white">
       <div class="container mx-auto px-5">
           <div class="py-10 text-center">
               <h1 class="title-font text-3xl font-medium text-gray-900 sm:text-6xl">NOTICIAS</h1>

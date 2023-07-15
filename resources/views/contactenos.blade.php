@@ -66,7 +66,7 @@
   
   </header>
 
-<section class="text-gray-600 body-font relative">
+<section class="text-gray-600 bg-white body-font relative">
     <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
       <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
         <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15611.74032225834!2d-74.917656!3d-11.978994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910c1e4ccd4520e3%3A0x3ad1082942bf47d2!2sPariahuanca%2012245%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1688049680367!5m2!1ses!2sus" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>

@@ -65,13 +65,13 @@
   </div>
   
   </header>
-    <section class="text-gray-600 body-font overflow-hidden">
+    <section class=" bg-white text-gray-600 body-font overflow-hidden">
         <div class="container px-5 mx-auto">
             <div class="text-center py-10 ">
                 <h1 class="sm:text-6xl text-3xl font-medium title-font text-gray-900">BIENVENIDOS</h1>
             </div>
             <div class="lg:w-4/5 mx-auto flex flex-wrap">
-                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400">
+                <img alt="" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="{{ asset('imagenes/portada4.jpeg') }}">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                         <div class="flex flex-wrap w-full mb-20">
                             <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -81,12 +81,22 @@
                                     COLEGIO
                                     </p>
                                 </span>
-                                <div class="h-0.5 w-96 bg-slate-300 rounded md:w-72"></div>
+                                <div class="h-0.5 w-96  rounded md:w-72"></div>
                             </div>
                         </div>
                         <div class="-mt-20 sm:-mt-12">
-                            <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Historia</h1>
-                            <p class="leading-relaxed py-6 text-justify">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+                            <p class="leading-relaxed py-6 text-justify">
+                                Estimada comunidad educativa,<br><br>
+                                Deseo darles una cálida bienvenida al inicio de un nuevo año escolar en el Colegio 24 de Junio. Este año es especialmente significativo, ya que nos encontramos frente a una nueva gestión y estamos experimentando cambios positivos en el panorama educativo de nuestro amado Perú.
+                                <br><br>
+                                Hemos atravesado momentos difíciles: la pandemia, la alternancia entre clases presenciales y virtuales, los contagios, la enfermedad y la pérdida de seres queridos. Sin duda, el campo educativo ha sido uno de los más afectados en nuestro país.
+                                <br><br>
+                                Reconocemos que todos somos partícipes de los procesos educativos, tanto en nuestras familias como en nuestra comunidad local y en todo el país. En el Colegio 24 de Junio, nos esforzaremos para seguir siendo un referente de educación de calidad, permitiéndonos crecer juntos día a día.
+                                <br><br>
+                                En nombre de toda la comunidad educativa, quiero expresar nuestro sincero agradecimiento por la confianza que han depositado en el Colegio 24 de Junio.
+                                <br><br>
+                                Reciban un cordial saludo,
+                            </p>
                         </div>
                 </div>
             </div>

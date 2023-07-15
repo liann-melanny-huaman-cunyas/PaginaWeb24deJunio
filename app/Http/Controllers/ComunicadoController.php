@@ -34,7 +34,7 @@ class ComunicadoController extends Controller
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $imgPath = 'imgs/' . $file->getClientOriginalName();
-            $file->move(public_path('img'), $imgPath);
+            $file->move(public_path('imgs'), $imgPath);
             $comunicado->foto = $imgPath;
         }
 
