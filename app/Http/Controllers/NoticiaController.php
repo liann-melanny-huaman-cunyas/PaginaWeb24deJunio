@@ -8,13 +8,8 @@ use Illuminate\Http\Request;
 
 class NoticiaController extends Controller
 {
-    public function index()
-    {
-        $noticias = Noticia::latest()->get();
-        return view('inicio', compact('noticias'));
-    }
 
-    public function listado()
+    public function index()
     {
         $noticias = Noticia::latest()->get();
         return view('listadonoticias', compact('noticias'));
@@ -54,14 +49,51 @@ class NoticiaController extends Controller
     public function show($id)
     {
         $noticia = Noticia::findOrFail($id);
-        return view('inicio', compact('noticia'));
+        return view('listadonoticias', compact('noticia'));
     }
+
+
+    public function edit($id)
+    {
+        $noticia = Noticia::findOrFail($id);
+        return view('listadonoticias', compact('noticia'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $noticia = Noticia::findOrFail($id);
+
+        // Valida los datos enviados en el formulario de edición
+        $validatedData = $request->validate([
+            'titulo' => 'required',
+            'contenido' => 'required',
+            'fecha' => 'required',
+            'foto' => 'image'
+        ]);
+
+        // Actualiza los datos de la noticia en la base de datos
+        $noticia->titulo = $validatedData['titulo'];
+        $noticia->contenido = $validatedData['contenido'];
+        $noticia->fecha = $validatedData['fecha'];
+
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $imgPath = 'img/' . $file->getClientOriginalName();
+            $file->move(public_path('img'), $imgPath);
+            $noticia->foto = $imgPath;
+        }
+
+        $noticia->save();
+
+        return redirect()->route('listadonoticias');
+    }
+
 
     public function destroy($id)
     {
         $noticia = Noticia::findOrFail($id);
         $noticia->delete();
-        return redirect()->route('noticias.index');
+        return redirect()->route('listadonoticias');
     }
 }
 

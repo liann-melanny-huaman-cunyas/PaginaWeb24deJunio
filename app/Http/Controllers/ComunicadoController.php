@@ -6,15 +6,16 @@ use Illuminate\Http\Request;
 
 class ComunicadoController extends Controller
 {
+
     public function index()
     {
         $comunicados = Comunicado::latest()->get();
-        return view('inicio', compact('comunicados'));
+        return view('listadocomunicados', compact('comunicados'));
     }
 
     public function create()
     {
-        return view('inicio');
+        return view('crearcomunicados');
     }
 
     public function store(Request $request)
@@ -37,7 +38,7 @@ class ComunicadoController extends Controller
             $file->move(public_path('img'), $imgPath);
             $comunicado->foto = $imgPath;
         }
- 
+
         $comunicado->save();
 
         return redirect()->route('inicio');
@@ -53,7 +54,7 @@ class ComunicadoController extends Controller
     {
         $comunicado = Comunicado::findOrFail($id);
         $comunicado->delete();
-        return redirect()->route('inicio');
+        return redirect()->route('listadocomunicados');
     }
 }
 
