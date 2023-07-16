@@ -7,6 +7,8 @@ use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ComunicadoController;
 use App\Http\Controllers\InicioControlller;
 
+    Route::get('/inicio', [InicioControlller::class, 'index'])->name('inicio');
+
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
@@ -17,10 +19,6 @@ use App\Http\Controllers\InicioControlller;
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     });
 
-
-    Route::get('/inicio', [InicioControlller::class, 'index'])->name('inicio');
-
-
     Route::get('/notas', [NotaController::class, 'index'])->name('listado');
     Route::get('/notas/create', [NotaController::class, 'create'])->name('notas.create');
     Route::post('/notas', [NotaController::class, 'store'])->name('notas.store');
@@ -29,7 +27,6 @@ use App\Http\Controllers\InicioControlller;
     Route::get('/notas/{id}/edit', [NotaController::class, 'edit'])->name('notas.edit');
     Route::put('/notas/{id}', [NotaController::class, 'update'])->name('notas.update');
 
-
     Route::get('/noticias', [NoticiaController::class, 'index'])->name('listadonoticias');
     Route::get('/noticias/create', [NoticiaController::class, 'create'])->name('noticias.create');
     Route::post('/noticias', [NoticiaController::class, 'store'])->name('noticias.store');
@@ -37,7 +34,6 @@ use App\Http\Controllers\InicioControlller;
     Route::get('/notas/{id}', [NoticiaController::class, 'show'])->name('noticias.show');
     Route::get('/noticias/{id}/edit', [NoticiaController::class, 'edit'])->name('noticias.edit');
     Route::put('/noticias/{id}', [NoticiaController::class, 'update'])->name('noticias.update');
-
 
     Route::get('/comunicados', [ComunicadoController::class, 'index'])->name('listadocomunicados');
     Route::get('/comunicados/create', [ComunicadoController::class, 'create'])->name('comunicados.create');
