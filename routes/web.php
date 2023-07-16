@@ -7,6 +7,10 @@ use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ComunicadoController;
 use App\Http\Controllers\InicioControlller;
 
+    Route::get('/', function () {
+        return view('inicio');
+    });
+
     Route::get('/inicio', [InicioControlller::class, 'index'])->name('inicio');
 
     Route::get('/dashboard', function () {
