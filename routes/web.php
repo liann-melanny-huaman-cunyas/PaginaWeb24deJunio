@@ -18,7 +18,7 @@ use App\Http\Controllers\InicioControlller;
     });
 
 
-    Route::get('/', [InicioControlller::class, 'index'])->name('inicio');
+    Route::get('/inicio', [InicioControlller::class, 'index'])->name('inicio');
 
 
     Route::get('/notas', [NotaController::class, 'index'])->name('listado');
