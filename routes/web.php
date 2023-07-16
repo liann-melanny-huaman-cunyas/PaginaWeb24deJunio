@@ -7,9 +7,6 @@ use App\Http\Controllers\NotaController;
 use App\Http\Controllers\ComunicadoController;
 
 
-    Route::get('/', function () {
-        return view('inicio');
-    })->name('inicio');
 
     Route::get('/conocenos', function () {
         return view('conocenos');
@@ -29,6 +26,10 @@ use App\Http\Controllers\ComunicadoController;
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     });
+
+
+    Route::get('/', [ComunicadoController::class, 'index'])->name('inicio');
+
 
     Route::get('/listado', [NotaController::class, 'index'])->name('listado');
     Route::get('/notas/create', [NotaController::class, 'create'])->name('notas.create');

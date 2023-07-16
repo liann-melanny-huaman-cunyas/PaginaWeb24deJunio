@@ -56,6 +56,7 @@
         </div>
 
     </header>
+
     <div class="header flex items-center justify-center xl:justify-end">
         <div class="fade-in header-card xl:mr-20 absolute flex flex-col w-5/6 xl:w-1/3 p-2 xl:p-10 rounded-lg border-dashed border border-zinc-800 ">
             <h1 class="font-bold p-2 text-white text-base xl:text-4xl font-serif">
@@ -215,19 +216,49 @@
 
                 </div>
             </div>
+        </div>
     </section>
+
     <section class="comunicados text-gray-600 body-font">
         <div class="container px-5 py-10 mx-auto">
-            <div class="flex flex-wrap w-full mb-4">
-                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h1 class="text-3xl font-medium title-font mb-2 lg:ml-7">
-                        <span class="text-black">Últimos</span>
-                        <span class="text-white ml-1">Comunicados</span>
-                    </h1>
-                    <div class="h-10 w-48 ml-28 -mt-12 bg-rose-900 rounded lg:ml-36 "></div>
+            <div class=" flex flex-wrap w-full mb-4">
+                <div class="w-full">
+                    <div class="titulo">
+                        <h1 class="text-3xl font-medium title-font mb-2 lg:ml-7">
+                            <span class="text-black">Últimos</span>
+                            <span class="text-white ml-1">Comunicados</span>
+                        </h1>
+                        <div class="h-10 w-48 ml-28 -mt-12 bg-rose-900 rounded lg:ml-36 "></div>
+                    </div>
+
+                    <div class="comunicados-card bg-slate-300 flex flex-wrap justify-center">
+                            @foreach ($comunicados as $comunicado)
+                            <div class="">
+                                <div class="w-2/3 ">
+                                    <div class="border-2 border-rose-700 rounded-3xl">
+                                        <div class="ml-12">
+                                            <div class=" h-64 p-4">
+                                                <img class="w-full h-full object-cover" src="{{ str_replace(' ', '%20', asset($comunicado->foto)) }}" alt="{{ $comunicado->titulo }}" />
+                                            </div>
+                                            <h3 class="title-font text-xs font-bold  mt-5 text-black">Publicado el {{ $comunicado->fecha }}</h3>
+                                            <h2 class="title-font my-4 text-xl font-medium text-black">{{ $comunicado->titulo }}</h2>
+                                            <p class="text-base">{{ $comunicado->contenido }}</p>
+                                            <div class="pb-4">
+                                                <a class="mt-4 inline-flex items-center text-black">Leer más
+                                                    <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="M12 5l7 7-7 7"></path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
