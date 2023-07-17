@@ -140,14 +140,6 @@
                                         <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{{ $noticia->titulo }}</h2>
                                         <p class="leading-relaxed">{{ $noticia->contenido }}</p>
                                     </div>
-                                    <div class="flex flex-wrap">
-                                        <a class="text-black inline-flex items-center mt-4">Leer más
-                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M5 12h14"></path>
-                                                <path d="M12 5l7 7-7 7"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
                                 </div>
                                 <div class="max-w-96 flex items-center">
                                     <div class="max-w-96 max-h-40">
@@ -187,14 +179,6 @@
                                 <h3 class="title-font text-xs font-bold  mt-5 text-black">Publicado el {{ $comunicado->fecha }}</h3>
                                 <h2 class="title-font my-4 text-xl font-medium text-black">{{ $comunicado->titulo }}</h2>
                                 <p class="text-base px-4 break-all ">{{ $comunicado->contenido }}</p>
-                                <div class="pb-4">
-                                    <a class="mt-4 inline-flex items-center text-black">Leer más
-                                        <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                         @endforeach
