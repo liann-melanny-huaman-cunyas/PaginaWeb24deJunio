@@ -61,13 +61,16 @@
                     BIENVENIDOS AL COLEGIO 24 DE JUNIO
                 </h1>
                 <p class="text-justify p-2 text-white text-sm xl:text-xl sm:visible ">
-                    Somos una empresa  que cuenta con más de 14 años de
-                    experiencia dedicada al rubro de la construcción y servicio en
-                    general, conformado por un equipo con experiencias y
-                    conocimiento. Comprometidos en brindar las mejores
-                    soluciones en cada proyecto y servicio acorde con las
-                    necesidades de los sectores de Minería, Eléctrica,
-                    electromecánico, Transporte y construcción.
+                    Somos una institucion educativa con una sólida
+                    trayectoria en el ámbito educativo. Nos hemos comprometido
+                    a brindar una educación de calidad y formar a nuestros
+                    estudiantes de manera integral. Nuestro equipo de docentes
+                    altamente capacitados está dedicado a transmitir valores fundamentales,
+                    fomentar el pensamiento crítico y promover habilidades necesarias
+                    para el desarrollo académico y personal de nuestros alumnos.
+                    En nuestro colegio, priorizamos la excelencia educativa y proporcionamos
+                    un ambiente inclusivo y seguro, donde cada estudiante tiene igualdad
+                    de oportunidades para crecer y alcanzar su máximo potencial.
                 </p>
             </div>
         </div>
