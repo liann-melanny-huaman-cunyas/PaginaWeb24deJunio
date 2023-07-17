@@ -68,9 +68,6 @@
                     altamente capacitados está dedicado a transmitir valores fundamentales,
                     fomentar el pensamiento crítico y promover habilidades necesarias
                     para el desarrollo académico y personal de nuestros alumnos.
-                    En nuestro colegio, priorizamos la excelencia educativa y proporcionamos
-                    un ambiente inclusivo y seguro, donde cada estudiante tiene igualdad
-                    de oportunidades para crecer y alcanzar su máximo potencial.
                 </p>
             </div>
         </div>
